@@ -1,7 +1,7 @@
 
 <?php
 include 'connect.php';
-
+error_reporting(0);
 if(isset($_POST['submit']))
   {
 	  $smf_name  = $_POST['fname'];
