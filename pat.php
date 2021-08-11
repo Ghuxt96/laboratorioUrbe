@@ -10,7 +10,7 @@ if(isset($_POST['submit']))
 	  $pet_add    = $_POST['addr'];
 	  $pet_type   = $_POST['bg'];
 	  $pet_bd     = $_POST['smbdd'];
-	  $pet_cont   = $_POST['tel'];
+	  $pet_cont   = $_POST['ci'];
 	  $pet_em	 = $_POST['email'];
 	  $pet_gender = $_POST['gender'];
 	  $pet_opdid = $_POST['dnames'];
