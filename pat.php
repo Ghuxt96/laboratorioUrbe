@@ -18,7 +18,6 @@ if(isset($_POST['submit']))
 
 
 	  //$trn_date = date("Y-m-d H:i:s");
-	  $pet_age = (date("Y-m-d") - ($pet_bd));
 
 	  $checkeml="SELECT pet_em from patient where pet_em ='$pet_em'";
 	  $checktel="SELECT pet_con from patient where pet_con ='$pet_cont'";
