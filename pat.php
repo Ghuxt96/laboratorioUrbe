@@ -1,5 +1,6 @@
 
 <?php
+ error_reporting(0);
 include 'connect.php';
 
 
@@ -10,7 +11,7 @@ if(isset($_POST['submit']))
 	  $pet_add    = $_POST['addr'];
 	  $pet_type   = $_POST['bg'];
 	  $pet_bd     = $_POST['smbdd'];
-	  $pet_cont   = $_POST['ci'];
+	  $pet_cont   = $_POST['tel'];
 	  $pet_em	 = $_POST['email'];
 	  $pet_gender = $_POST['gender'];
 	  $pet_opdid = $_POST['dnames'];
@@ -18,6 +19,7 @@ if(isset($_POST['submit']))
 
 
 	  //$trn_date = date("Y-m-d H:i:s");
+	  $pet_age = (date("Y-m-d") - ($pet_bd));
 
 	  $checkeml="SELECT pet_em from patient where pet_em ='$pet_em'";
 	  $checktel="SELECT pet_con from patient where pet_con ='$pet_cont'";
